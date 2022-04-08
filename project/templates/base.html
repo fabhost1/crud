@@ -1,0 +1,9 @@
+
+{% for form in form %}
+<table border="1">
+  <input type="text" value="{{form.name1}}">
+  <input type="text" value="{{form.name2}}"><br>
+  <a href="show/{{form.id}}">edit</a>
+</table>
+
+{% endfor %}

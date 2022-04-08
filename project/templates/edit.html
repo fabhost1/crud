@@ -1,0 +1,19 @@
+
+
+<table border="1" >
+<form action="update{{form.id}}" method="post" >
+
+    {% csrf_token %}
+    <tr>
+        
+        <td>name1</td>
+        <td>name2</td>
+    </tr>
+    
+    
+    <!--th><input type="text" name="id" value={{form.id}}></th-->
+    <th><input type="text" name="name1" value={{form.name1}}></th>
+    <th><input type="text" name='name2' value={{form.name2}}></th>
+    <th><input type="submit" value="update"></th>
+</form>
+</table>
